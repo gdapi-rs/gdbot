@@ -1,0 +1,26 @@
+[package]
+name = "gdbot"
+version = "0.1.0"
+authors = ["Vaporox"]
+edition = "2021"
+description = "A Discord bot that lets you interact with the Geometry Dash API"
+repository = "https://github.com/gdapi-rs/gdbot"
+license = "ISC"
+default-run = "gdbot"
+
+[dependencies]
+dotenv = "0.15"
+serde_json = "1"
+toml = "0.5"
+
+[dependencies.gdapi]
+git = "https://github.com/gdapi-rs/gdapi"
+
+[dependencies.serenity]
+version = "0.11"
+default-features = false
+features = ["client", "gateway", "model", "rustls_backend"]
+
+[dependencies.tokio]
+version = "1"
+features = ["macros", "rt-multi-thread"]

@@ -1,0 +1,32 @@
+[[commands]]
+name = "level"
+description = "Gets a level"
+dm_permission = false
+
+[[commands.options]]
+name = "id"
+description = "The id of the level"
+type = 4
+required = true
+
+[[commands]]
+name = "search-user"
+description = "Searches for a user"
+dm_permission = false
+
+[[commands.options]]
+name = "query"
+description = "The search query"
+type = 3
+required = true
+
+[[commands]]
+name = "user"
+description = "Gets a user"
+dm_permission = false
+
+[[commands.options]]
+name = "id"
+description = "The account id of the user"
+type = 4
+required = true
